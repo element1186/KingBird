@@ -1,0 +1,497 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		874648072435563400623A46 /* ImageScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 874648062435563400623A46 /* ImageScrollView.swift */; };
+		879DAC74243277B700C07F98 /* FeedTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879DAC72243277B700C07F98 /* FeedTableViewCell.swift */; };
+		879DAC75243277B700C07F98 /* FeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 879DAC73243277B700C07F98 /* FeedTableViewCell.xib */; };
+		879DAC7824327C8300C07F98 /* DataDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879DAC7724327C8300C07F98 /* DataDownloader.swift */; };
+		879EA66F243271DE00483FE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879EA66E243271DE00483FE9 /* AppDelegate.swift */; };
+		879EA671243271DE00483FE9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879EA670243271DE00483FE9 /* SceneDelegate.swift */; };
+		879EA673243271DE00483FE9 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879EA672243271DE00483FE9 /* BaseViewController.swift */; };
+		879EA676243271DE00483FE9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 879EA674243271DE00483FE9 /* Main.storyboard */; };
+		879EA678243271E300483FE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 879EA677243271E300483FE9 /* Assets.xcassets */; };
+		879EA67B243271E300483FE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 879EA679243271E300483FE9 /* LaunchScreen.storyboard */; };
+		879EA685243272BE00483FE9 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879EA684243272BE00483FE9 /* BaseTableViewCell.swift */; };
+		879EA6882432747D00483FE9 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879EA6872432747D00483FE9 /* FeedViewController.swift */; };
+		87F0460A2434D89A00AA7DE1 /* FullScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F046092434D89A00AA7DE1 /* FullScreenViewController.swift */; };
+		EF1A3A08A565C62E20127312 /* Pods_KingBird.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F5D78D13533E986086ECC5 /* Pods_KingBird.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		035C6BC122DA7DB11E506C04 /* Pods-KingBird.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KingBird.release.xcconfig"; path = "Target Support Files/Pods-KingBird/Pods-KingBird.release.xcconfig"; sourceTree = "<group>"; };
+		19F5D78D13533E986086ECC5 /* Pods_KingBird.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KingBird.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D485C5590F4CA8EC4FDAB84 /* Pods-KingBird.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KingBird.debug.xcconfig"; path = "Target Support Files/Pods-KingBird/Pods-KingBird.debug.xcconfig"; sourceTree = "<group>"; };
+		874648062435563400623A46 /* ImageScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageScrollView.swift; sourceTree = "<group>"; };
+		879DAC72243277B700C07F98 /* FeedTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedTableViewCell.swift; sourceTree = "<group>"; };
+		879DAC73243277B700C07F98 /* FeedTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedTableViewCell.xib; sourceTree = "<group>"; };
+		879DAC7724327C8300C07F98 /* DataDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataDownloader.swift; sourceTree = "<group>"; };
+		879EA66B243271DE00483FE9 /* KingBird.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KingBird.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		879EA66E243271DE00483FE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		879EA670243271DE00483FE9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		879EA672243271DE00483FE9 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		879EA675243271DE00483FE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		879EA677243271E300483FE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		879EA67A243271E300483FE9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		879EA67C243271E300483FE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		879EA684243272BE00483FE9 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		879EA6872432747D00483FE9 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		87F046092434D89A00AA7DE1 /* FullScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		879EA668243271DE00483FE9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF1A3A08A565C62E20127312 /* Pods_KingBird.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		879DAC712432773A00C07F98 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				879DAC72243277B700C07F98 /* FeedTableViewCell.swift */,
+				879DAC73243277B700C07F98 /* FeedTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		879DAC7624327C4900C07F98 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				879DAC7724327C8300C07F98 /* DataDownloader.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		879EA662243271DE00483FE9 = {
+			isa = PBXGroup;
+			children = (
+				879EA66D243271DE00483FE9 /* KingBird */,
+				879EA66C243271DE00483FE9 /* Products */,
+				A5938D6A71B32621597CECE5 /* Pods */,
+				A18D38E1D49DD62D9405325B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		879EA66C243271DE00483FE9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				879EA66B243271DE00483FE9 /* KingBird.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		879EA66D243271DE00483FE9 /* KingBird */ = {
+			isa = PBXGroup;
+			children = (
+				879DAC7624327C4900C07F98 /* Network */,
+				879EA6832432721400483FE9 /* Storyboard */,
+				879EA6822432720700483FE9 /* Base */,
+				87F046072434D41400AA7DE1 /* ViewControllers */,
+				879EA66E243271DE00483FE9 /* AppDelegate.swift */,
+				879EA670243271DE00483FE9 /* SceneDelegate.swift */,
+				879EA677243271E300483FE9 /* Assets.xcassets */,
+				879EA679243271E300483FE9 /* LaunchScreen.storyboard */,
+				879EA67C243271E300483FE9 /* Info.plist */,
+			);
+			path = KingBird;
+			sourceTree = "<group>";
+		};
+		879EA6822432720700483FE9 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				879EA672243271DE00483FE9 /* BaseViewController.swift */,
+				879EA684243272BE00483FE9 /* BaseTableViewCell.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		879EA6832432721400483FE9 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				879EA674243271DE00483FE9 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		879EA6862432743100483FE9 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				879DAC712432773A00C07F98 /* Cells */,
+				879EA6872432747D00483FE9 /* FeedViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		87F046072434D41400AA7DE1 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				87F046082434D84C00AA7DE1 /* FullScreenImage */,
+				879EA6862432743100483FE9 /* Main */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		87F046082434D84C00AA7DE1 /* FullScreenImage */ = {
+			isa = PBXGroup;
+			children = (
+				874648062435563400623A46 /* ImageScrollView.swift */,
+				87F046092434D89A00AA7DE1 /* FullScreenViewController.swift */,
+			);
+			path = FullScreenImage;
+			sourceTree = "<group>";
+		};
+		A18D38E1D49DD62D9405325B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19F5D78D13533E986086ECC5 /* Pods_KingBird.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A5938D6A71B32621597CECE5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5D485C5590F4CA8EC4FDAB84 /* Pods-KingBird.debug.xcconfig */,
+				035C6BC122DA7DB11E506C04 /* Pods-KingBird.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		879EA66A243271DE00483FE9 /* KingBird */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 879EA67F243271E300483FE9 /* Build configuration list for PBXNativeTarget "KingBird" */;
+			buildPhases = (
+				6660466E01843BAAF05DAD95 /* [CP] Check Pods Manifest.lock */,
+				879EA667243271DE00483FE9 /* Sources */,
+				879EA668243271DE00483FE9 /* Frameworks */,
+				879EA669243271DE00483FE9 /* Resources */,
+				6648F6709DB6593171707153 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KingBird;
+			productName = KingBird;
+			productReference = 879EA66B243271DE00483FE9 /* KingBird.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		879EA663243271DE00483FE9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = Sergey;
+				TargetAttributes = {
+					879EA66A243271DE00483FE9 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 879EA666243271DE00483FE9 /* Build configuration list for PBXProject "KingBird" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 879EA662243271DE00483FE9;
+			productRefGroup = 879EA66C243271DE00483FE9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				879EA66A243271DE00483FE9 /* KingBird */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		879EA669243271DE00483FE9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				879EA67B243271E300483FE9 /* LaunchScreen.storyboard in Resources */,
+				879DAC75243277B700C07F98 /* FeedTableViewCell.xib in Resources */,
+				879EA678243271E300483FE9 /* Assets.xcassets in Resources */,
+				879EA676243271DE00483FE9 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6648F6709DB6593171707153 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KingBird/Pods-KingBird-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KingBird/Pods-KingBird-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KingBird/Pods-KingBird-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6660466E01843BAAF05DAD95 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KingBird-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		879EA667243271DE00483FE9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				879EA685243272BE00483FE9 /* BaseTableViewCell.swift in Sources */,
+				879DAC74243277B700C07F98 /* FeedTableViewCell.swift in Sources */,
+				879EA673243271DE00483FE9 /* BaseViewController.swift in Sources */,
+				874648072435563400623A46 /* ImageScrollView.swift in Sources */,
+				87F0460A2434D89A00AA7DE1 /* FullScreenViewController.swift in Sources */,
+				879EA66F243271DE00483FE9 /* AppDelegate.swift in Sources */,
+				879EA671243271DE00483FE9 /* SceneDelegate.swift in Sources */,
+				879EA6882432747D00483FE9 /* FeedViewController.swift in Sources */,
+				879DAC7824327C8300C07F98 /* DataDownloader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		879EA674243271DE00483FE9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				879EA675243271DE00483FE9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		879EA679243271E300483FE9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				879EA67A243271E300483FE9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		879EA67D243271E300483FE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		879EA67E243271E300483FE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		879EA680243271E300483FE9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D485C5590F4CA8EC4FDAB84 /* Pods-KingBird.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TN3YWN9T9V;
+				INFOPLIST_FILE = KingBird/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.site.com.KingBird;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		879EA681243271E300483FE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 035C6BC122DA7DB11E506C04 /* Pods-KingBird.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TN3YWN9T9V;
+				INFOPLIST_FILE = KingBird/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.site.com.KingBird;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		879EA666243271DE00483FE9 /* Build configuration list for PBXProject "KingBird" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				879EA67D243271E300483FE9 /* Debug */,
+				879EA67E243271E300483FE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		879EA67F243271E300483FE9 /* Build configuration list for PBXNativeTarget "KingBird" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				879EA680243271E300483FE9 /* Debug */,
+				879EA681243271E300483FE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 879EA663243271DE00483FE9 /* Project object */;
+}
