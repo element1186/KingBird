@@ -8,19 +8,18 @@
 
 import UIKit
 import Alamofire
-import SDWebImage
 
 class FeedViewController: BaseViewController {
-    var imageDataArray = [PicsumPhoto]()
     let activityIndicator = UIActivityIndicatorView()
+    var images = PicSumDatabase.getData()
     
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        imageDataDownload()
         showSpinner(onView: view)
         tableConfigure()
-        imageDataDownload()
     }
     
     func tableConfigure(){
@@ -28,13 +27,18 @@ class FeedViewController: BaseViewController {
     }
     
     func imageDataDownload(){
-        DataDownloader.shared.dataDonwload { result in
+        DataDownloader.shared.dataImagesDonwload { result in
             switch result{
             case .success(let data):
-                self.imageDataArray = data
+                if self.images.count == 0 {
+                    DataDownloader.shared.imagesDownload(imageDataArray: data)
+                    self.images = PicSumDatabase.getData()
+                }
                 self.tableView.reloadData()
                 self.removeSpinner()
-            case .failure(let error): break
+            case .failure(let error):
+                self.removeSpinner()
+                print("Произошла ошибка \(error.localizedDescription)")
             }
         }
     }
@@ -42,39 +46,34 @@ class FeedViewController: BaseViewController {
 }
 extension FeedViewController : UITableViewDataSource, UITableViewDelegate{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return imageDataArray.count
+            return images.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: FeedTableViewCell.cellIdentifier()!) as! FeedTableViewCell
+        cell.configure(image: UIImage(data: images[indexPath.row].image)!, indexPath: indexPath)
         cell.delegate = self
-        if let photoUrl = imageDataArray[indexPath.row].downloadUrl {
-            cell.configure(imageUrl: photoUrl, indexPath: indexPath)
-        }
         return cell
     }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let controller = FullScreenViewController.controller()
-        
-        if let photoUrl = imageDataArray[indexPath.row].downloadUrl {
-            controller.imageUrl = photoUrl
-        }
-        
+        controller.imageUrl = images[indexPath.row].url
         present(controller, animated: true, completion: nil)
     }
+        
+}
+extension FeedViewController : DeletePhotoDelegate {
     
     func showAlertDeletePhoto(indexPath: IndexPath){
         let alert = UIAlertController(title: "Удаление", message: "Удалить фотографию?", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Да", style: .default, handler: { action in
-            self.imageDataArray.remove(at: indexPath.row)
+            PicSumDatabase.delete(object: self.images[indexPath.row])
             self.tableView.reloadData()
         }))
         alert.addAction(UIAlertAction(title: "Нет", style: .cancel, handler: nil))
         self.present(alert, animated: true)
     }
-    
-}
-extension FeedViewController : DeletePhotoDelegate {
     
     func deletePhoto(indexPath: IndexPath) {
        showAlertDeletePhoto(indexPath: indexPath)

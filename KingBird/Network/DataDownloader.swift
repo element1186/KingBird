@@ -38,7 +38,7 @@ class DataDownloader{
     static let shared = DataDownloader()
     private init(){}
 
-    func dataDonwload(page: Int = 1, limit: Int = 20, handler: @escaping (Result<[PicsumPhoto]>) -> Void){
+    func dataImagesDonwload(page: Int = 1, limit: Int = 20, handler: @escaping (Result<[PicsumPhoto]>) -> Void){
         Alamofire.request("https://picsum.photos/v2/list?page=\(page)&limit=\(limit)").responseJSON { response in
             guard let data = response.data else { return }
             do {
@@ -49,5 +49,22 @@ class DataDownloader{
             }
         }
     }
+    
+    func imagesDownload(imageDataArray: [PicsumPhoto]){
+        for dataImage in imageDataArray {
+            let imageDatabase = PicSumDatabase()
+            if let downloadUrl = dataImage.downloadUrl {
+                if let url = URL(string: downloadUrl){
+                    if let data = try? Data(contentsOf: url){
+                        let image = UIImage.resizeImage(image: UIImage(data: data)!, targetSize: CGSize(width: 1280, height: 720))
+                        imageDatabase.image = image!
+                        imageDatabase.url = downloadUrl
+                        PicSumDatabase.saveData(object: imageDatabase)
+                    }
+                }
+            }
+        }
+    }
+    
     
 }

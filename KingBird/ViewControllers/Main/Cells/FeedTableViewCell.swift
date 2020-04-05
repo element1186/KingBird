@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import SDWebImage
 
 protocol DeletePhotoDelegate {
     func deletePhoto(indexPath: IndexPath)
@@ -35,14 +34,10 @@ class FeedTableViewCell: BaseTableViewCell {
     }
     
     
-    func configure(imageUrl: String, indexPath: IndexPath){
+    func configure(image: UIImage, indexPath: IndexPath){
         self.indexPath = indexPath
-        photoImageView.sd_imageIndicator = SDWebImageActivityIndicator.gray
-        
-        DispatchQueue.global(qos: .utility).async {
-                self.photoImageView?.sd_setImage(with: URL(string: imageUrl))
-            }
-        }
+        photoImageView.image = image
+    }
     
     @objc func longPressed(longPressGestureRecognizer: UILongPressGestureRecognizer){
         if longPressGestureRecognizer.state == .began {

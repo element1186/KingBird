@@ -19,6 +19,8 @@
 		879EA67B243271E300483FE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 879EA679243271E300483FE9 /* LaunchScreen.storyboard */; };
 		879EA685243272BE00483FE9 /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879EA684243272BE00483FE9 /* BaseTableViewCell.swift */; };
 		879EA6882432747D00483FE9 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 879EA6872432747D00483FE9 /* FeedViewController.swift */; };
+		87AB71C2243A546300F59655 /* UIImage+resizeImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AB71C1243A546300F59655 /* UIImage+resizeImage.swift */; };
+		87AB71C5243A55D500F59655 /* PicSumDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AB71C4243A55D500F59655 /* PicSumDatabase.swift */; };
 		87F0460A2434D89A00AA7DE1 /* FullScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F046092434D89A00AA7DE1 /* FullScreenViewController.swift */; };
 		EF1A3A08A565C62E20127312 /* Pods_KingBird.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F5D78D13533E986086ECC5 /* Pods_KingBird.framework */; };
 /* End PBXBuildFile section */
@@ -41,6 +43,8 @@
 		879EA67C243271E300483FE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		879EA684243272BE00483FE9 /* BaseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		879EA6872432747D00483FE9 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		87AB71C1243A546300F59655 /* UIImage+resizeImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+resizeImage.swift"; sourceTree = "<group>"; };
+		87AB71C4243A55D500F59655 /* PicSumDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PicSumDatabase.swift; sourceTree = "<group>"; };
 		87F046092434D89A00AA7DE1 /* FullScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,6 +98,8 @@
 		879EA66D243271DE00483FE9 /* KingBird */ = {
 			isa = PBXGroup;
 			children = (
+				87AB71C3243A55AD00F59655 /* Database */,
+				87AB71BF243A53E900F59655 /* Helpers */,
 				879DAC7624327C4900C07F98 /* Network */,
 				879EA6832432721400483FE9 /* Storyboard */,
 				879EA6822432720700483FE9 /* Base */,
@@ -131,6 +137,30 @@
 				879EA6872432747D00483FE9 /* FeedViewController.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		87AB71BF243A53E900F59655 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				87AB71C0243A543600F59655 /* Extension */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		87AB71C0243A543600F59655 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				87AB71C1243A546300F59655 /* UIImage+resizeImage.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		87AB71C3243A55AD00F59655 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				87AB71C4243A55D500F59655 /* PicSumDatabase.swift */,
+			);
+			path = Database;
 			sourceTree = "<group>";
 		};
 		87F046072434D41400AA7DE1 /* ViewControllers */ = {
@@ -286,9 +316,11 @@
 			files = (
 				879EA685243272BE00483FE9 /* BaseTableViewCell.swift in Sources */,
 				879DAC74243277B700C07F98 /* FeedTableViewCell.swift in Sources */,
+				87AB71C5243A55D500F59655 /* PicSumDatabase.swift in Sources */,
 				879EA673243271DE00483FE9 /* BaseViewController.swift in Sources */,
 				874648072435563400623A46 /* ImageScrollView.swift in Sources */,
 				87F0460A2434D89A00AA7DE1 /* FullScreenViewController.swift in Sources */,
+				87AB71C2243A546300F59655 /* UIImage+resizeImage.swift in Sources */,
 				879EA66F243271DE00483FE9 /* AppDelegate.swift in Sources */,
 				879EA671243271DE00483FE9 /* SceneDelegate.swift in Sources */,
 				879EA6882432747D00483FE9 /* FeedViewController.swift in Sources */,

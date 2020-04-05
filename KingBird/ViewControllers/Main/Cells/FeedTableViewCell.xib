@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,24 +16,25 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="140"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Huo-dD-Zur">
-                        <rect key="frame" x="40" y="11" width="240" height="118"/>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UEh-os-OP3">
+                        <rect key="frame" x="40" y="6" width="240" height="128"/>
                         <constraints>
-                            <constraint firstAttribute="width" constant="240" id="RJA-kX-O6B"/>
-                            <constraint firstAttribute="height" constant="118" id="ZKs-gi-8ZH"/>
+                            <constraint firstAttribute="width" constant="240" id="VUV-xK-JQL"/>
+                            <constraint firstAttribute="height" constant="128" id="pEs-Cv-rlm"/>
                         </constraints>
                     </imageView>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="Huo-dD-Zur" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="7n8-X0-Njw"/>
-                    <constraint firstItem="Huo-dD-Zur" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="40" id="SJi-he-iGe"/>
-                    <constraint firstAttribute="trailing" secondItem="Huo-dD-Zur" secondAttribute="trailing" constant="40" id="erq-eb-YUl"/>
-                    <constraint firstAttribute="bottom" secondItem="Huo-dD-Zur" secondAttribute="bottom" constant="11" id="uoM-Wz-1KF"/>
+                    <constraint firstItem="UEh-os-OP3" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="IGd-fw-04u"/>
+                    <constraint firstItem="UEh-os-OP3" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="40" id="VHd-ER-kmM"/>
+                    <constraint firstItem="UEh-os-OP3" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="Zar-1z-RVC"/>
+                    <constraint firstItem="UEh-os-OP3" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="nub-iV-Qrv"/>
+                    <constraint firstAttribute="bottom" secondItem="UEh-os-OP3" secondAttribute="bottom" constant="6" id="p2N-PB-DO7"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="photoImageView" destination="Huo-dD-Zur" id="0Kf-Al-Bjl"/>
+                <outlet property="photoImageView" destination="UEh-os-OP3" id="bjc-fP-ATA"/>
             </connections>
             <point key="canvasLocation" x="131.8840579710145" y="139.95535714285714"/>
         </tableViewCell>

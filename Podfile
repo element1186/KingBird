@@ -5,8 +5,7 @@ use_frameworks!
 
 def shared_pods
   pod 'Alamofire', '~> 4.8'
-  pod 'SDWebImage', '~> 5.0'
-  pod 'EFImageViewZoom', :git => 'https://github.com/ezefranca/EFImageViewZoom.git'
+  pod 'RealmSwift'
 end
 
 target 'KingBird' do
